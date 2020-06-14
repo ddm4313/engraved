@@ -1,4 +1,3 @@
-<center>
-<img src="https://i.imgur.com/RjmV1QS.png"></img>
-</center>
-Engraved
+<p align="center">
+  <img width="460" height="300" src="https://i.imgur.com/RjmV1QS.png">
+</p>
