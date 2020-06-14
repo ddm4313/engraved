@@ -6,4 +6,4 @@ Engraved is a Discord Bot that logs all the messages the users write on your Dis
 
 <h1> What was used to build the bot and the dashboard? </h1>
 <li> Discord Bot: Discord.js, MongoDB</li>
-<li> Dashboard: Express.js and Discord's OAuth2 API </li>
+<li> Dashboard: Express.js, MongoDB and Discord's OAuth2 API </li>
