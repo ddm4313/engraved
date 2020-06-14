@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="/stylesheet/style.css">
+        <script src="/scripts/auth.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/stylesheet/toastr.css">
+        <script src="/stylesheet/toastr.js"></script>
+    </head>
+    <body>
+        <div class="navbar"><div class="discord">
+            <img src="/stylesheet/iconmonstr-discord-1.svg" alt="Discord" draggable="false"> <span style="padding-left: 12px;">Engraved</span></div></div>
+        <div class="container">
+            <div class="main">
+                <div class="leftSide login">
+                    <h1>Login</h1>   
+                    <div class="form">
+                        <input name="username" placeholder="Email"></input>
+                        <input name="password" type="password" placeholder="Password"></input>
+                        <button name="LoginSubmit" class="login">Login</button>
+                        <br>
+                        <br>
+                        <a id="RegisterSwitch" >Create an account</a>
+                    </div>
+                </div>
+                <div class="leftSide register">
+                    <h1>Register</h1>
+                    <div class="form">
+                        <input name="usernameReg" placeholder="Email"></input>
+                        <input name="passwordReg" type="password" placeholder="Password"></input>
+                        <button name="RegisterSubmit" class="login">Register</button>
+                        <br>
+                        <br>
+                        <a id="LoginSwitch" >Have an account? Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    $(document).ready(() => {
+        $('.register').hide();
+
+        $('#RegisterSwitch').click(() => {
+            $(".login").toggle();
+            $(".register").toggle();
+            $('button[name="RegisterSubmit"]').show();
+        });
+        $('#LoginSwitch').click(() => {
+            $(".login").toggle();
+            $(".register").toggle();
+            //$('button[name="RegisterSubmit"]').show();
+        });
+    });
+</script>
+<style>
+    .leftSide {
+        width: 100% !important;
+    }
+
+    #RegisterSwitch {
+        font-size: 20px;
+    }
+    #RegisterSwitch:hover {
+        cursor: pointer;
+    }
+</style>

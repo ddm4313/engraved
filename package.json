@@ -1,0 +1,21 @@
+{
+  "name": "untitled8",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "discord-oauth2": "^2.2.0",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-rate-limit": "^5.1.3",
+    "instagram-web-api": "^2.2.0",
+    "mongodb": "^3.5.8",
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "dev": "concurrently --kill-others \"node main.js\" \"node discordBot.js\""
+  }
+}

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="/scripts/auth.js"></script>
+        <script src="/scripts/dashboard.js"></script>
+        <link rel="stylesheet" href="/stylesheet/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+        <script src="https://cdn.zinggrid.com/zinggrid.min.js" defer></script>
+        <link rel="stylesheet" href="/stylesheet/toastr.css">
+        <script src="/stylesheet/toastr.js"></script>
+    </head>
+    <body>
+    <div class="preloader"></div>
+
+    <!-- Link to open the modal -->
+  <!-- <p><a name="discordModal" href="#discord" rel="modal:open">Open Modal</a></p> -->
+        <div class="navbar"><div class="discord">
+            <a href="/">   <i class="fab fa-discord"></i>  Engraved</a></span></div> </div>
+            <div class="user" style="margin: 1%;">
+                <div class="subuser">
+                    <figure class="avatar">
+                        <img id="avatarImg" idth="50px" height="50px" src="https://pbs.twimg.com/profile_images/1260953366630264838/rqAiNASF_400x400.jpg">
+                    </figure>
+                    <div class="tag">
+                        <p class="discordName">Captain Hook</p>    
+                        <p class="discordTag" style="text-align: left;">#0000</p>    
+                    </div>
+                    <div class="settings">
+                        <a id="linkDiscord" href="https://discord.com/api/oauth2/authorize?client_id=677390194282070036&redirect_uri=http%3A%2F%2Fengraved.dinmavric.dev%2Flink_discord&response_type=code&scope=identify"><i class="fas fa-link"></i></a>
+                        <a id="unlinkDiscord"><i class="fas fa-unlink"></i></a>
+                        <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="wrapper">
+                    <h2><i class="fas fa-sticky-note"></i> Messages</h1>
+                        <div class="messages" style="margin: 35px;">
+                            <zing-grid search id="messages"></zing-grid>
+                        </div>
+                </div>
+            </div>
+        </div>
+</html>
