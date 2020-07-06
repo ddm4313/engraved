@@ -2,7 +2,7 @@ const DiscordOauth2 = require("discord-oauth2");
 var MongoClient = require('mongodb').MongoClient;
 var discord = require('./test.js');
 var dbName = "heroku_lmftlsm7";
-var url = "http://engraved.dinmavric.dev/link_discord";
+var url = process.env.URL;
 require('dotenv').config()
 
 var Discord_ClientID = process.env.Discord_ClientID;
